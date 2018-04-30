@@ -1,0 +1,16 @@
+{
+  "name": "Spoof OS",
+  "version": "1.0",
+  "description": "To bypass checking in web app of e-tax online payment system.",
+  "manifest_version": 2, 
+  "content_scripts": [ 
+  { 
+	"matches": [
+		"https://efile.tax.nat.gov.tw/*", 
+		"https://efile.tax.nat.gov.tw/irxw/*"
+	],
+	"js": ["spoof.js"],
+	"run_at": "document_start"
+  } 
+  ]
+}
